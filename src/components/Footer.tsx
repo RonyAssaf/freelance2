@@ -73,11 +73,11 @@ const Footer = () => {
         <div className="border-t border-gray-700 pt-8 text-center">
           <div className="mb-4">
             <h3 className="text-xl md:text-2xl font-bold text-transparent bg-gradient-accent bg-clip-text">
-              ApexLink Logistics
+              Lavlogisticsinc
             </h3>
           </div>
           <p className="text-gray-400 text-xs sm:text-sm">
-            © 2024 ApexLink Logistics. All rights reserved. | Privacy Policy | Terms of Service
+            © 2024 Lavlogisticsinc. All rights reserved. | Privacy Policy | Terms of Service
           </p>
         </div>
       </div>

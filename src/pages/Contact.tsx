@@ -4,6 +4,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { ArrowLeft, Phone, Mail, MapPin, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import Navigation from "@/components/Navigation";
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -22,29 +24,39 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Frontend-only form submission
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  try {
+    const res = await fetch("https://api.lavlogisticsinc.com/contact.php", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        message: formData.message,
+      }),
+    });
+    const data = await res.json();
+    if (!res.ok || !data.ok) throw new Error(data?.error || "Request failed");
+
     setShowSuccess(true);
-    setTimeout(() => {
-      setShowSuccess(false);
-      setFormData({ name: "", email: "", phone: "", message: "" });
-    }, 3000);
-  };
+    setFormData({ name: "", email: "", phone: "", message: "" });
+    setTimeout(() => setShowSuccess(false), 3000);
+  } catch (err: unknown) {
+    if (err instanceof Error) {
+      alert(`Failed to send: ${err.message}`);
+    } else {
+      alert("Failed to send: Unknown error");
+    }
+  }
+};
 
   return (
-    <div className="min-h-screen bg-background">
-      {/* Navigation Back */}
-      <div className="bg-primary py-4">
-        <div className="container mx-auto px-4">
-          <Link to="/">
-            <Button variant="ghost" className="text-white hover:bg-white/10">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Home
-            </Button>
-          </Link>
-        </div>
-      </div>
+      <div className="min-h-screen bg-background pt-24">
+      {/* Shared Navigation (same as Home) */}
+      <Navigation />
+
 
       {/* Hero Section */}
       <section className="py-20 bg-gradient-primary text-white">

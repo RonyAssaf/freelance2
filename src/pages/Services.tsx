@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
+import Navigation from "@/components/Navigation"
 import { ArrowLeft, Truck, Package, Ship, Warehouse, MapPin } from "lucide-react";
+
 import { Link } from "react-router-dom";
 
 const services = [
@@ -67,18 +69,9 @@ const services = [
 
 const Services = () => {
   return (
-    <div className="min-h-screen bg-background">
-      {/* Navigation Back */}
-      <div className="bg-primary py-4">
-        <div className="container mx-auto px-4">
-          <Link to="/">
-            <Button variant="ghost" className="text-white hover:bg-white/10">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Home
-            </Button>
-          </Link>
-        </div>
-      </div>
+     <div className="min-h-screen bg-background pt-24">
+      {/* Shared Navigation (same as Home) */}
+      <Navigation />
 
       {/* Hero Section */}
       <section className="py-20 bg-gradient-primary text-white">

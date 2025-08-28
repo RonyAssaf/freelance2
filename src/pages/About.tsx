@@ -1,27 +1,20 @@
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Award, Users, Heart, Globe } from "lucide-react";
+import Navigation from "@/components/Navigation";
 import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-background">
-      {/* Navigation Back */}
-      <div className="bg-primary py-4">
-        <div className="container mx-auto px-4">
-          <Link to="/">
-            <Button variant="ghost" className="text-white hover:bg-white/10">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Home
-            </Button>
-          </Link>
-        </div>
-      </div>
+    <div className="min-h-screen bg-background pt-24">
+      {/* Shared Navigation (same as Home) */}
+      <Navigation />
+
 
       {/* Hero Section */}
       <section className="py-20 bg-gradient-primary text-white">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">
-            About ApexLink Logistics
+            About Lavlogisticsinc
           </h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto text-gray-200 animate-slide-up">
             Two decades of innovation, excellence, and partnership in supply chain solutions
@@ -37,7 +30,7 @@ const About = () => {
               <h2 className="text-4xl font-bold text-primary mb-6">Our Story</h2>
               <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  Founded in 2003, ApexLink Logistics began as a vision to revolutionize supply chain 
+                  Founded in 2003, Lavlogisticsinc began as a vision to revolutionize supply chain 
                   management through technology-driven solutions and unwavering commitment to client success. 
                   What started as a small team in Atlanta has grown into a premier 3PL provider serving 
                   companies across North America.
@@ -84,7 +77,7 @@ const About = () => {
               Leadership Team
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Meet the experienced professionals driving innovation and excellence at ApexLink Logistics
+              Meet the experienced professionals driving innovation and excellence at Lavlogisticsinc
             </p>
           </div>
           
@@ -238,7 +231,7 @@ const About = () => {
               <h2 className="text-4xl font-bold text-primary mb-8">Community Involvement</h2>
               <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  At ApexLink Logistics, we believe in giving back to the communities where we operate. 
+                  At Lavlogisticsinc, we believe in giving back to the communities where we operate. 
                   Our team actively participates in local initiatives and supports organizations that 
                   make a positive impact.
                 </p>

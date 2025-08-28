@@ -23,10 +23,10 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto animate-fade-in">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
             Streamline Your
-            <span className="text-transparent bg-gradient-accent bg-clip-text"> Supply Chain</span>
+            <span className="text-transparent bg-gitan bg-clip-text"> Supply Chain</span>
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl mb-8 text-gray-200 leading-relaxed">
-            ApexLink Logistics delivers comprehensive 3PL solutions that optimize your operations,
+            Lavlogisticsinc delivers comprehensive 3PL solutions that optimize your operations,
             reduce costs, and accelerate growth with cutting-edge technology and expert service.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
