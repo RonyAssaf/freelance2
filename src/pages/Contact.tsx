@@ -92,7 +92,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                   <div>
                     <h3 className="text-xl font-semibold text-primary mb-2">Phone</h3>
                     <p className="text-muted-foreground">+16479797700 </p>
-                    <p className="text-muted-foreground">Direct: (865) 555-0123</p>
+                    <p className="text-muted-foreground"></p>
                   </div>
                 </div>
                 
@@ -102,24 +102,12 @@ const handleSubmit = async (e: React.FormEvent) => {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-primary mb-2">Email</h3>
-                    <p className="text-muted-foreground">info@apexlinklogistics.com</p>
-                    <p className="text-muted-foreground">sales@apexlinklogistics.com</p>
+                    <p className="text-muted-foreground">info@lavlogisticsinc.com</p>
+                    <p className="text-muted-foreground"></p>
                   </div>
                 </div>
                 
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-gradient-accent rounded-full flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-navy-900" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-primary mb-2">Address</h3>
-                    <p className="text-muted-foreground">
-                      1250 Commerce Drive<br />
-                      Knoxville, TN 37919<br />
-                      United States
-                    </p>
-                  </div>
-                </div>
+                
                 
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-gradient-accent rounded-full flex items-center justify-center flex-shrink-0">
@@ -130,7 +118,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                     <p className="text-muted-foreground">
                       Monday - Friday: 7:00 AM - 7:00 PM EST<br />
                       Saturday: 8:00 AM - 4:00 PM EST<br />
-                      Sunday: Emergency services only
+                      24/7 Customer support
                     </p>
                   </div>
                 </div>
@@ -258,15 +246,7 @@ const handleSubmit = async (e: React.FormEvent) => {
             >
               <a href="tel:18002739564">Call Now: +16479797700</a>
             </Button>
-            <Link to="/services">
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-navy-900"
-              >
-                View Our Services
-              </Button>
-            </Link>
+          
           </div>
         </div>
       </section>

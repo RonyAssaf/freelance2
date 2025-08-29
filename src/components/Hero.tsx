@@ -39,14 +39,7 @@ const Hero = () => {
                 Get Free Quote
               </Button>
             </Link>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="text-lg px-8 py-4 min-w-[200px] border-white text-white hover:bg-white hover:text-navy-900"
-              asChild
-            >
-              <Link to="/services">View Services</Link>
-            </Button>
+
           </div>
         </div>
       </div>
