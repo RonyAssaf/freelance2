@@ -29,11 +29,10 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6">
-            Comprehensive 3PL Services
+            Nationwide Carrier Network
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            From warehousing to last-mile delivery, we provide integrated logistics solutions
-            that scale with your business and exceed your expectations.
+            Access to a trusted, vetted network of carriers ensuring coverage across North America..
           </p>
         </div>
         

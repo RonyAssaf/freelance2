@@ -9,10 +9,11 @@ const Footer = () => {
         {/* CTA Section */}
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">
-            Ready to Optimize Your Supply Chain?
+            Looking for a Smarter Way to Ship?
+
           </h2>
           <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Get a free consultation and discover how ApexLink can transform your logistics operations.
+            Discover customized logistics strategies designed around your goals.
           </p>
           <Link to="/contact">
             <Button variant="cta" size="lg" className="text-lg px-8 py-4">

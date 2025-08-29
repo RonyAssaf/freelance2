@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import LAVLOGO from "../assets/LAVLOGO.png";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,13 +20,13 @@ const Navigation = () => {
       <div className="hidden md:flex justify-start space-x-8">
         <Link
           to="/"
-          className="text-lg font-semibold text-primary hover:text-accent transition-colors"
+          className="text-3xl font-semibold text-primary hover:text-accent transition-colors"
         >
           Home
         </Link>
         <Link
           to="/about"
-          className="text-lg font-semibold text-primary hover:text-accent transition-colors "
+          className="text-3xl font-semibold text-primary hover:text-accent transition-colors "
         >
           About
         </Link>
@@ -34,27 +35,28 @@ const Navigation = () => {
       {/* Left placeholder on mobile to keep grid balance */}
       <div className="md:hidden" />
 
-      {/* Center Logo */}
-      <div className="flex justify-center transform translate-x-[5%]" >
-        <Link
-          to="/"
-          className="block text-3xl font-extrabold text-transparent bg-gradient-accent bg-clip-text"
-        >
-          Lavlogisticsinc
-        </Link>
-      </div>
+    {/* Center Logo */}
+<div className="flex justify-center transform translate-x-[3%]">
+  <Link to="/" className="block"> 
+    <img
+  src={LAVLOGO}
+  alt="Lav Logistics Logo"
+  className="h-10 md:h-20 object-contain"
+/>
+  </Link>
+</div>
 
       {/* Right Section (Desktop) */}
       <div className="hidden md:flex justify-end space-x-8">
         <Link
           to="/services"
-          className="text-lg font-semibold text-primary hover:text-accent transition-colors "
+          className="text-3xl font-semibold text-primary hover:text-accent transition-colors "
         >
           Services
         </Link>
         <Link
           to="/contact"
-          className="text-lg font-semibold text-primary hover:text-accent transition-colors"
+          className="text-3xl font-semibold text-primary hover:text-accent transition-colors"
         >
           Contact
         </Link>

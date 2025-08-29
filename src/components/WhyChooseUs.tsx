@@ -3,23 +3,23 @@ import { Shield, Clock, Award, Users } from "lucide-react";
 const differentiators = [
   {
     icon: Shield,
-    title: "99.9% Accuracy Rate",
-    description: "Industry-leading precision in order fulfillment and inventory management."
+    title: "Fraud Prevention",
+    description: "We stop fraud before it reaches your business."
   },
   {
     icon: Clock,
     title: "24/7 Operations",
-    description: "Round-the-clock monitoring and support to keep your supply chain moving."
+    description: "Day or night, we’ve got you covered."
   },
   {
     icon: Award,
-    title: "20+ Years Experience",
-    description: "Proven expertise across multiple industries with a track record of success."
+    title: "Experience That Delivers",
+    description: "Time-tested knowledge and a proven record of moving freight with confidence."
   },
   {
     icon: Users,
-    title: "Dedicated Account Management",
-    description: "Personal service with dedicated specialists who understand your business."
+    title: "Specialists at Your Side",
+    description: "Hands-on guidance and personalized attention every step of the way."
   }
 ];
 
@@ -32,8 +32,7 @@ const WhyChooseUs = () => {
             Why Choose Lavlogisticsinc?
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            We combine cutting-edge technology with personalized service to deliver
-            exceptional results that drive your business forward.
+            we combine cutting-edge technology with personalized service to deliver exceptional results that drive your business forward.
           </p>
         </div>
         

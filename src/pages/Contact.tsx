@@ -62,10 +62,10 @@ const handleSubmit = async (e: React.FormEvent) => {
       <section className="py-20 bg-gradient-primary text-white">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
-            Contact Us
+            Customized Solutions, Expert Support
           </h1>
           <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-200 animate-slide-up">
-            Ready to optimize your supply chain? Get in touch with our logistics experts today.
+            Reach out today and let us create a logistics plan tailored to your business goals.
           </p>
         </div>
       </section>
@@ -144,8 +144,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                   Request a Free Quote
                 </h2>
                 <p className="text-muted-foreground mb-8">
-                  Fill out the form below and our team will get back to you within 24 hours 
-                  with a customized logistics solution.
+                  Start Your Custom Plan Today – Submit your details, and our team will craft a solution tailored to your supply chain.
                 </p>
                 
                 {showSuccess && (
@@ -245,10 +244,10 @@ const handleSubmit = async (e: React.FormEvent) => {
       <section className="py-20 bg-primary text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-fade-in">
-            Need Immediate Assistance?
+            24/7 Emergency Logistics
           </h2>
           <p className="text-xl mb-8 text-gray-200 max-w-2xl mx-auto">
-            For urgent logistics needs or time-sensitive shipments, call our dedicated support line.
+            Reach our dedicated support line for immediate assistance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 

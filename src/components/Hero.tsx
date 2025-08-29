@@ -22,8 +22,8 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 text-center text-white pt-20">
         <div className="max-w-4xl mx-auto animate-fade-in">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            Streamline Your
-            <span className="text-transparent bg-gitan bg-clip-text"> Supply Chain</span>
+            End-to-End 
+            <span className="text-transparent bg-gitan bg-clip-text"> Logistics Excellence</span>
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl mb-8 text-gray-200 leading-relaxed">
             Lavlogisticsinc delivers comprehensive 3PL solutions that optimize your operations,
