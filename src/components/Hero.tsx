@@ -30,13 +30,15 @@ const Hero = () => {
             reduce costs, and accelerate growth with cutting-edge technology and expert service.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              variant="hero" 
-              size="lg" 
-              className="text-lg px-8 py-4 min-w-[200px]"
-            >
-              Get Free Quote
-            </Button>
+            <Link to="/contact">
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="text-lg px-8 py-4 min-w-[200px]"
+              >
+                Get Free Quote
+              </Button>
+            </Link>
             <Button 
               variant="outline" 
               size="lg" 

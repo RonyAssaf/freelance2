@@ -91,7 +91,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-primary mb-2">Phone</h3>
-                    <p className="text-muted-foreground">1-800-APEX-LOG (1-800-273-9564)</p>
+                    <p className="text-muted-foreground">+16479797700 </p>
                     <p className="text-muted-foreground">Direct: (865) 555-0123</p>
                   </div>
                 </div>
@@ -256,7 +256,7 @@ const handleSubmit = async (e: React.FormEvent) => {
               className="text-lg px-8 py-4"
               asChild
             >
-              <a href="tel:18002739564">Call Now: 1-800-APEX-LOG</a>
+              <a href="tel:18002739564">Call Now: +16479797700</a>
             </Button>
             <Link to="/services">
               <Button 
